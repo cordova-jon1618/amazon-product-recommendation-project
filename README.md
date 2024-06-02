@@ -8,6 +8,8 @@ Jonathan Cordova @cordova-jon1618 - https://github.com/cordova-jon1618
 
 Jesse Carrillo @JesseCarrilloCS - https://github.com/JesseCarrilloCS
 
+![alt text](Project_Title_Image.jpg)
+
 # INTRODUCTION
 Online shopping has radically changed the way people shop today. Although Amazon is the market leader, one main disadvantage of using the site is the inability to interact with products before buying them. With such a large variety of similar items it can be difficult for someone who simply wants to purchase an item to find what they need. With this in mind our project aims to improve the usability of the Amazon store page by scraping the data found on Amazon to filter out all of the extra information and try to find the products with the best value based on existing user reviews and price.
 
@@ -146,17 +148,17 @@ Major companies will not make it easy to scrape their data and might have some s
 Amazon reviews are overall accurate but there are cases when they are not, such as when someone liked and recommended a product in their review but gave it a low star. By taking into account the words the customer used with sentiment analysis it would rank higher in our lists than Amazon's way which would consider that item as low satisfaction from ratings only.
 
 # REFERENCES
-Rcrawler - https://cran.r-project.org/web/packages/Rcrawler/index.html
-Rcrawler PDF Reference - https://cran.r-project.org/web/packages/Rcrawler/Rcrawler.pdf
-Tidyverse - https://www.tidyverse.org/
-Rvest - https://rvest.tidyverse.org/
-Rvest Functions - https://rvest.tidyverse.org/reference/index.html
-GGplot2 - https://ggplot2.tidyverse.org/
-GGAlly- https://cran.r-project.org/web/packages/GGally/index.html
-Caret - https://cran.r-project.org/web/packages/caret/caret.pdf
-Class package - https://cran.r-project.org/web/packages/class/class.pdf
-e1071 package - https://cran.r-project.org/web/packages/e1071/e1071.pdf
-R. K. Shukla, P. Sharma, N. Samaiya and M. Kherajani, "WEB USAGE MINING-A Study of Web data pattern detection methodologies and its applications in Data Mining," 2nd International Conference on Data, Engineering and Applications (IDEA), Bhopal, India, 2020, pp. 1-6, doi: 10.1109/IDEA49133.2020.9170690. https://ieeexplore-ieee-org.libproxy.csun.edu/document/9170690
+- Rcrawler - https://cran.r-project.org/web/packages/Rcrawler/index.html
+    - Rcrawler PDF Reference - https://cran.r-project.org/web/packages/Rcrawler/Rcrawler.pdf
+- Tidyverse - https://www.tidyverse.org/
+- Rvest - https://rvest.tidyverse.org/
+    - Rvest Functions - https://rvest.tidyverse.org/reference/index.html
+- GGplot2 - https://ggplot2.tidyverse.org/
+- GGAlly- https://cran.r-project.org/web/packages/GGally/index.html
+- Caret - https://cran.r-project.org/web/packages/caret/caret.pdf
+- Class package - https://cran.r-project.org/web/packages/class/class.pdf
+- e1071 package - https://cran.r-project.org/web/packages/e1071/e1071.pdf
+- R. K. Shukla, P. Sharma, N. Samaiya and M. Kherajani, "WEB USAGE MINING-A Study of Web data pattern detection methodologies and its applications in Data Mining," 2nd International Conference on Data, Engineering and Applications (IDEA), Bhopal, India, 2020, pp. 1-6, doi: 10.1109/IDEA49133.2020.9170690. https://ieeexplore-ieee-org.libproxy.csun.edu/document/9170690
 
 
 ## Project Structure
