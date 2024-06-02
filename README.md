@@ -43,7 +43,7 @@ Both datasets are processed in parallel, with each entry checked for relevance t
 ### Data Visualization
 The visualizations for the project were created using three separate .csv files, one for each of the product categories. A scatter plot was used to give an overview of how the amazon reviews and price compare to the user submitted reviews. The plots also use the updated product categories to make the graph a little more understandable for the reader. A correlation matrix was also created, which compares the amazon reviews, user submitted reviews and product price to each other. Examining the correlation between Amazon reviews and user reviews revealed a weak positive correlation, showing that Amazon reviews for books are consistent with the user reviews. It also showed that for office chairs the rating and price of an item have a strong negative correlation, showing that customers tend to not like the more expensive items in that category as much when compared to the cheaper alternatives. These graphs give insight into how to train our model in the next steps. For the sentiment analysis scores we also used a word cloud for the different sentiments. An example of a correlation matrix can be found below, showing how Amazon’s reviews, the customer reviews and product price all interact with each other.
 
-![alt text](Data_Visualization_Image1.jpg)
+![alt text](readme_assets/Data_Visualization_Image1.jpg)
 
 ## Part 2
 ### Classification - K-Nearest Neighbor (KNN)
@@ -81,28 +81,28 @@ The KNN classification algorithm was evaluated using precision, recall, and F1 s
 - Recall: 100.00% (Measure of completeness)
 - F1 Score: 99.48% (Harmonic mean of precision and recall, suitable for imbalanced dataset)
 
-![alt text](KNN_Evaluation_Metrics_Image1.jpg)
+![alt text](readme_assets/KNN_Evaluation_Metrics_Image1.jpg)
 
 This confusion matrix was created using a validation dataset (103 tuples).
 The predicted target values (Predicted) are mapped against the actual target values (Actual).
 
-![alt text](KNN_Confusion_Matrix_Image1.jpg)
+![alt text](readme_assets/KNN_Confusion_Matrix_Image1.jpg)
 
-![alt text](KNN_Confusion_Matrix_Image2.jpg)
+![alt text](readme_assets/KNN_Confusion_Matrix_Image2.jpg)
 
 The confusion matrix reveals the model's performance on the validation dataset. It predicted six negative instances and misclassified one as positive. However, it correctly identified all 96 positive instances. Overall, the model shows strong performance, especially in recognizing positive cases, which is crucial for our task of categorizing products as “Best Value“ or “Not Recommended.“
 
 During the testing phase, two methods were developed for the KNN model to make recommendations. The ability to import a CSV file to be tested with the model, and the method used where the dataset is split from the main dataset by using the 10% split. 
 
-![alt text](Preliminary_Results_3D_Scatter_Plot_KNN_Image1.jpg)
+![alt text](readme_assets/Preliminary_Results_3D_Scatter_Plot_KNN_Image1.jpg)
 
 Preliminary Results illustrates this CSV import method used for testing the KNN model.
 
-![alt text](Preliminary_Results_3D_Scatter_Plot_KNN_Image2.jpg)
+![alt text](readme_assets/Preliminary_Results_3D_Scatter_Plot_KNN_Image2.jpg)
 
 The Final Results are illustrated using the Dataset Split method for making recommendations using the KNN model.
 
-![alt text](Dataset_Split_Book_Category_KNN_Image1.jpg)
+![alt text](readme_assets/Dataset_Split_Book_Category_KNN_Image1.jpg)
 
 Looking at the final results to make our recommendations, the recommendation for the book category resulted in a few best value recommendations. When analyzing the results, the Sentiment Score is the biggest contributing factor to determining whether an item is recommended or not. As we can see, the books labeled as “Best Value” are the ones with high sentiment scores.
 
@@ -110,15 +110,15 @@ Looking at the final results to make our recommendations, the recommendation for
 ## SVM - Evaluation Results
 For the SVM algorithm the same dataset was used (1046 total tuples) to ensure the results are comparable. The data set was split into three separate datasets, one for each category, and each of these datasets were split into two for training the model. 80% was used for model training and 20% for testing the model. To select the initial “good deal” items the category averages were used to ensure that the item being checked has a similar value. When tested the model had very good accuracy, averaging to around 98% accuracy on average with around a 96% precision for the “good deal” class and “good deals” hitting a low of 93% precision.. By classifying the deals we significantly reduce the chances of bad deals being chosen as they will never be better deals than the average for the category. Below is an example of how books are classified. The circles are the support vectors used to create the graph while the crosses are the data points. In this graph we can easily see the separation between the values that are good deals (inside the red area) and those which are not.
 
-![alt text](SVM_Classification_Plot_Image1.jpg)
+![alt text](readme_assets/SVM_Classification_Plot_Image1.jpg)
 
 A confusion matrix was created for each of the categories. An example of a confusion matrix for books is shown below, where the values for correct matches for bad and good deals are shown. In this run only a few wrong selections were made, which shows that our model is good at predicting the value of our items. In this run, 84 bad deals were predicted and 26 good deals, with only one false positive and negative each.
 
-![alt text](SVM_Confusion_Matrix_Image1.jpg)
+![alt text](readme_assets/SVM_Confusion_Matrix_Image1.jpg)
 
 When examining the selected items, the SVM model tended to prefer items that were not only high in ratings but in sentiment score. The slot for “best value” was usually taken by the items that had better reviews written for them. For printers which had relatively more expensive products the average score was overall less than those of cheaper items like books. This meant that for printers the deciding factor was price while for cheaper items quality and user satisfaction played a larger role in the decision.
 
-![alt text](Head_of_Test_Data_Image1.jpg)
+![alt text](readme_assets/Head_of_Test_Data_Image1.jpg)
 
 
 ## Recommendation Results
