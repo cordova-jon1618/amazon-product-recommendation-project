@@ -1,7 +1,7 @@
 # Amazon Product Recommendation Project
 Using Data Mining to Compare Amazon Ratings to Customer Sentiment
 
-![alt text](Project_Title_Image.jpg)
+![alt text](readme_assets/Project_Title_Image.jpg)
 
 # CONTACT US
 #
