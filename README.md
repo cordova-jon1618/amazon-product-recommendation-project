@@ -175,3 +175,4 @@ Amazon reviews are overall accurate but there are cases when they are not, such 
 - `analysis/`: Contains R scripts for data analysis.
   - `knn_algorithm/`: Script for KNN machine learning model.
   - `svm_algorithm/`: Script for SVM machine learning model.
+- `readme_assets/`: Contains README Images from project.
