@@ -2,14 +2,15 @@
 Using Data Mining to Compare Amazon Ratings to Customer Sentiment
 For COMP 541 Data Mining
 
-# CONTACT US
-
 ![alt text](Project_Title_Image.jpg)
 
-Jonathan Cordova @cordova-jon1618 - https://github.com/cordova-jon1618
+# CONTACT US
 
-Jesse Carrillo @JesseCarrilloCS - https://github.com/JesseCarrilloCS
+### Jonathan Cordova @cordova-jon1618 - https://github.com/cordova-jon1618
 
+### Jesse Carrillo @JesseCarrilloCS - https://github.com/JesseCarrilloCS
+
+###
 
 # INTRODUCTION
 Online shopping has radically changed the way people shop today. Although Amazon is the market leader, one main disadvantage of using the site is the inability to interact with products before buying them. With such a large variety of similar items it can be difficult for someone who simply wants to purchase an item to find what they need. With this in mind our project aims to improve the usability of the Amazon store page by scraping the data found on Amazon to filter out all of the extra information and try to find the products with the best value based on existing user reviews and price.
